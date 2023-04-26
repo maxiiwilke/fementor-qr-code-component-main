@@ -1,0 +1,88 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/outfit-v10-latin-regular.woff2') format('woff2'), 
+         url('fonts/outfit-v10-latin-regular.woff') format('woff'); 
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/outfit-v10-latin-700.woff2') format('woff2'), 
+         url('fonts/outfit-v10-latin-700.woff') format('woff');
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  html, body {
+    height: 100%;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* General styles */ 
+:root {
+    --clr-white:hsl(0, 0%, 100%);
+    --clr-light-gray:hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+
+    --fs-paragraph: 15px;
+    --fw-bold: 700;
+}
+body {
+    display: grid;
+    place-content: center;
+    background-color:var(--clr-light-gray);
+    font-size: var(--fs-paragraph);
+    font-family: 'Outfit', sans-serif;
+}
+.qr-code{
+    max-width: 320px;
+    background-color: var(--clr-white);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.09);
+    padding: 15px;
+    border-radius: 1rem;
+}
+.qr-code__image {
+    border-radius:.75rem;
+}
+.qr-code__text-content{
+    text-align: center;
+}
+.qr-code__title {
+    font-weight: var(--fw-bold);
+    margin-top: 1.5rem;
+    color: var(--clr-dark-blue);
+}
+.qr-code__description {
+    padding: 1rem;
+    color: var(--clr-grayish-blue);
+}
