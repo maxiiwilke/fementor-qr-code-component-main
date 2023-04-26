@@ -54,10 +54,11 @@
     --clr-grayish-blue: hsl(220, 15%, 55%);
     --clr-dark-blue: hsl(218, 44%, 22%);
 
-    --fs-paragraph: 15px;
+    --fs-paragraph: 0.938rem;
     --fw-bold: 700;
 }
 body {
+    min-height: 100vh;
     display: grid;
     place-content: center;
     background-color:var(--clr-light-gray);
@@ -65,10 +66,10 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 .qr-code{
-    max-width: 320px;
+    max-width: 20rem;
     background-color: var(--clr-white);
     box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.09);
-    padding: 15px;
+    padding: 0.938rem;
     border-radius: 1rem;
 }
 .qr-code__image {
